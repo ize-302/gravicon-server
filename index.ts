@@ -13,7 +13,7 @@ var corsOptions = {
 app.get("/", cors(corsOptions), (req, res) => {
   const { url } = req.query;
   var options = {
-    uri: `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://www.${url}&size=16`,
+    uri: `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://www.${url}&size=32`,
     encoding: "binary",
   };
 
