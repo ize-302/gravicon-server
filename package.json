@@ -1,5 +1,5 @@
 {
-  "name": "web-favicon-server",
+  "name": "gravicon-server",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
