@@ -11,7 +11,7 @@ COPY bun.lockb bun.lockb
 RUN bun install
 
 # copy source code
-COPY src src
+COPY . .
 COPY tsconfig.json tsconfig.json
 
 ENV PORT=8000
