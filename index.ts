@@ -11,7 +11,10 @@ var corsOptions = {
 };
 
 app.get("/", cors(corsOptions), (req, res) => {
-  const { url } = req.query;
+  let url = req.query.url as string;
+  // stripout url prefixes i.e http://, https://,www.
+  url = url.replace("https://", "").replace("http://", "").replace("www.", "");
+
   var options = {
     uri: `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://www.${url}&size=128`,
     encoding: "binary",
