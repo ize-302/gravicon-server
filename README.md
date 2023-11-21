@@ -1,15 +1,3 @@
 # gravicon-server
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.0.6. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+API server with a single endpoint that serves the [Gravicon plugin](https://www.figma.com/community/plugin/1307231621622379453). It fetches the favicon, converts it to bas64 data URI and sends it back as response
